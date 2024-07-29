@@ -1,6 +1,6 @@
 # Install a Copilot in M365 dashboard
 
-![alt text](image-4.png)
+![alt text](Viva_Connections_with_Copilot_in_M365_resources.png)
 
 ### The one-stop-shop for all Copilot resources and updates
 
