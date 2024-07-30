@@ -9,21 +9,21 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 1. Download the `.zip` archive
 
-<img src="image.png" style="width: 500px;">
-
 2. Unpack the archive and open `adenin.PnPTool.exe` as an Administrator
 
-![alt text](image-1.png)
+<img src="image.png" style="width: 500px;">
 
 3. Enter your SharePoint site URL, e.g. `https://m365x59762214.sharepoint.com/`
 
-![alt text](image-2.png)
+<img src="image-1.png" style="width: 500px;">
 
 4. The command line will open the browser so you can authenticate with SharePoint
 
-![alt text](image-3.png)
+<img src="image-2.png" style="width: 500px;">
 
 5. Once authenticated, you can close the tab. The command line tool will now install the Cards on your Viva Connections dashboard. This shuold take 2-3 minutes.
+
+<img src="image-3.png" style="width: 500px;">
 
 6. Once done, the command line will close by itself. You can now navigate to your Viva Connections dashboard.
 
