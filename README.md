@@ -29,46 +29,80 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 ## What Cards are included
 
+- Featured (to do)
+
 - Copilot Adoption
+
+![alt text](image-4.png)
 
 - Academy
 
+![alt text](image-5.png)
+
 - Copilot QnA
+
+![alt text](image-6.png)
 
 - Learning
 
+![alt text](image-7.png)
+
 - Blog
+
+![alt text](image-8.png)
 
 - Dashboard
 
+![alt text](image-9.png)
+
 - M365 Roadmap
+
+![alt text](image-10.png)
 
 - Updates
 
+![alt text](image-11.png)
+
 - Copilot Community
+
+![alt text](image-12.png)
 
 - Prompt Buddy
 
+![alt text](image-13.png)
+
 - Adoption
+
+![alt text](image-14.png)
 
 - Prompts
 
-- Mechanics
+![alt text](image-15.png)
 
-- Scenarios
+- Mechanics (to do)
 
-- Workday
+- Scenarios (to do)
 
-- ServiceNow
+- Workday (to do)
 
-- SuccessFactors
+- ServiceNow (to do)
 
-- Sponsored
+- SuccessFactors (to do)
 
+- Sponsored (to do)
+
+## Is this free?
+
+Yes
 
 ## Can Adenin help with configuring?
 
-Some of the Cards in this package are updating themselves with the latest CoE resources for you. And others (e.g. Dashboard, Copilot QnA, Prompt Buddy, Workday, SuccesFactors, ServiceNow, Learning) need to be configured with your organization's SharePoint instance. Adenin can do this job for you, just reach out for a complimentary no-obgliation consultation and one of our experts can help you get your Copilot CoE off the ground.
+Some of the Cards in this package are updating themselves with the latest CoE resources for you. And others (e.g. Dashboard, Copilot QnA, Prompt Buddy, Workday, SuccesFactors, ServiceNow, Learning) need to be configured with your organization's SharePoint instance (for example to install the Prompt Buddy PowerApp or set up the relevant Viva Engage sites). Adenin can do this job for you, [just reach out](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=YcZMzgZFSE2MZMWwkKpG-1hGoYSsiA1AuSdSFitOj-xUN0wwMDRKRTBKTjVPWkRVR0hWUEZQR0FUNy4u) for a complimentary no-obgliation consultation and one of our experts can help you get your Copilot CoE off the ground.
 
 ## Where do I find these Cards after the installation?
 
+On your Viva Connections dashboard.
+
+## Does this work in SharePoint or in MS Teams?
+
+In both
