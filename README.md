@@ -9,7 +9,7 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 1. Download the `.zip` archive
 
-<img src="image.png" style="width: 30%">
+<img src="image.png" style="width: 500px;">
 
 2. Unpack the archive and open `adenin.PnPTool.exe` as an Administrator
 
