@@ -19,17 +19,56 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 4. The command line will open the browser so you can authenticate with SharePoint
 
-<img src="image-2.png" style="width: 500px;">
+<img src="image-2.png" style="width: 700px;">
 
 5. Once authenticated, you can close the tab. The command line tool will now install the Cards on your Viva Connections dashboard. This shuold take 2-3 minutes.
 
-<img src="image-3.png" style="width: 500px;">
+<img src="image-3.png" style="width: 700px;">
 
 6. Once done, the command line will close by itself. You can now navigate to your Viva Connections dashboard.
 
 ## What Cards are included
 
+- Copilot Adoption
+
+- Academy
+
+- Copilot QnA
+
+- Learning
+
+- Blog
+
+- Dashboard
+
+- M365 Roadmap
+
+- Updates
+
+- Copilot Community
+
+- Prompt Buddy
+
+- Adoption
+
+- Prompts
+
+- Mechanics
+
+- Scenarios
+
+- Workday
+
+- ServiceNow
+
+- SuccessFactors
+
+- Sponsored
 
 
 ## Can Adenin help with configuring?
+
+Some of the Cards in this package are updating themselves with the latest CoE resources for you. And others (e.g. Dashboard, Copilot QnA, Prompt Buddy, Workday, SuccesFactors, ServiceNow, Learning) need to be configured with your organization's SharePoint instance. Adenin can do this job for you, just reach out for a complimentary no-obgliation consultation and one of our experts can help you get your Copilot CoE off the ground.
+
+## Where do I find these Cards after the installation?
 
