@@ -66,7 +66,7 @@ const string cardUrlBase = "https://app.adenin.com/app/assistant/card/{0}";
 const string apiErrorMessage = "Skipping {Card} as platform returned status {Status} during creation";
 const string cardExistsWarning = "Skipping {Card} as it exists already in the dashboard";
 const string cardUrlProp = "cardUrl";
-const string formatPlaceholder = "{0}";
+const string cardUrlPlaceholder = "{0}";
 const string cardJson = $$"""
                           {
                               "appIntegrations": true,
@@ -97,7 +97,7 @@ const string cardJson = $$"""
                                       "color": "warning"
                                   }
                               },
-                              "cardUrl": "{{formatPlaceholder}}"
+                              "cardUrl": "{{cardUrlPlaceholder}}"
                           }
                           """;
 
@@ -177,8 +177,14 @@ using (var scope = host.Services.CreateScope())
 
         customAce.Title = result.Data.Title;
         customAce.CardSize = card.Size;
-        customAce.Properties = JsonSerializer.Deserialize<JsonElement>(cardJson.Replace(formatPlaceholder, cardUrl));
-
+        
+        if (result.Data.Logo is not null)
+        {
+            customAce.IconProperty = result.Data.Logo;
+        }
+        
+        customAce.Properties = JsonSerializer.Deserialize<JsonElement>(cardJson.Replace(cardUrlPlaceholder, cardUrl));
+        
         dashboard.AddACE(customAce);
     }
 
@@ -189,7 +195,7 @@ host.Dispose();
 
 internal record PlatformResponse<T>(int ErrorCode, T Data);
 
-internal record NotebookCopyResult(Guid Id, string Title);
+internal record NotebookCopyResult(Guid Id, string Title, string? Logo);
 
 internal record CardList(Card[] Cards);
 
