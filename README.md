@@ -87,7 +87,7 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 - Scenarios
 
-<img src="image-28.png" style="width: 160px;">
+<img src="image-30.png" style="width: 160px;">
 
 - Prompt Pulse
 
@@ -95,11 +95,11 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 - Workday
 
-<img src="image-16.png" style="width: 160px;">
+<img src="image-31.png" style="width: 160px;">
 
 - ServiceNow
 
-<img src="image-22.png" style="width: 160px;">
+<img src="image-32.png" style="width: 160px;">
 
 - SuccessFactors Goals
 
