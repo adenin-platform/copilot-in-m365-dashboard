@@ -29,85 +29,29 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 ## What Cards are included
 
-- Featured
+| Card                | Image                                           | Note |
+|---------------------|-------------------------------------------------|------|
+| Featured            | <img src="image-23.png" style="width: 160px;">  |      |
+| Copilot Adoption    | <img src="image-4.png" style="width: 160px;">   |      |
+| Academy             | <img src="image-5.png" style="width: 160px;">   |      |
+| Copilot QnA         | <img src="image-6.png" style="width: 160px;">   |      |
+| Learning            | <img src="image-7.png" style="width: 310px;">   |      |
+| Blog                | <img src="image-8.png" style="width: 160px;">   |      |
+| Dashboard           | <img src="image-9.png" style="width: 310px;">   |      |
+| M365 Roadmap        | <img src="image-10.png" style="width: 160px;">  |      |
+| Updates             | <img src="image-11.png" style="width: 160px;">  |      |
+| Copilot Community   | <img src="image-12.png" style="width: 160px;">  |      |
+| Prompt Buddy        | <img src="image-13.png" style="width: 160px;">  |      |
+| Adoption            | <img src="image-14.png" style="width: 160px;">  |      |
+| Prompts             | <img src="image-15.png" style="width: 160px;">  |      |
+| Mechanics           | <img src="image-27.png" style="width: 160px;">  |      |
+| Scenarios           | <img src="image-30.png" style="width: 160px;">  |      |
+| Prompt Pulse        | <img src="image-24.png" style="width: 160px;">  |      |
+| Workday             | <img src="image-31.png" style="width: 160px;">  |      |
+| ServiceNow          | <img src="image-32.png" style="width: 160px;">  |      |
+| SuccessFactors Goals| <img src="image-29.png" style="width: 160px;">  |      |
+| Sponsored           | <img src="image-26.png" style="width: 160px;">  |      |
 
-<img src="image-23.png" style="width: 160px;">
-
-- Copilot Adoption
-
-<img src="image-4.png" style="width: 160px;">
-
-- Academy
-
-<img src="image-5.png" style="width: 160px;">
-
-- Copilot QnA
-
-<img src="image-6.png" style="width: 160px;">
-
-- Learning
-
-<img src="image-7.png" style="width: 310px;">
-
-- Blog
-
-<img src="image-8.png" style="width: 160px;">
-
-- Dashboard
-
-<img src="image-9.png" style="width: 310px;">
-
-- M365 Roadmap
-
-<img src="image-10.png" style="width: 160px;">
-
-- Updates
-
-<img src="image-11.png" style="width: 160px;">
-
-- Copilot Community
-
-<img src="image-12.png" style="width: 160px;">
-
-- Prompt Buddy
-
-<img src="image-13.png" style="width: 160px;">
-
-- Adoption
-
-<img src="image-14.png" style="width: 160px;">
-
-- Prompts
-
-<img src="image-15.png" style="width: 160px;">
-
-- Mechanics
-
-<img src="image-27.png" style="width: 160px;">
-
-- Scenarios
-
-<img src="image-30.png" style="width: 160px;">
-
-- Prompt Pulse
-
-<img src="image-24.png" style="width: 160px;">
-
-- Workday
-
-<img src="image-31.png" style="width: 160px;">
-
-- ServiceNow
-
-<img src="image-32.png" style="width: 160px;">
-
-- SuccessFactors Goals
-
-<img src="image-29.png" style="width: 160px;">
-
-- Sponsored
-
-<img src="image-26.png" style="width: 160px;">
 
 ## Is this free?
 
