@@ -3,7 +3,7 @@
 
 ![alt text](/img/cover.png)
 
-<p class="lead">As Microsoft's Copilot for Microsoft 365 continues to improve and help organizations increase their producitivity, it <strong>can be hard to stay up-to-date</strong>. With this Viva Connections dashboard you have the the <strong>ultimate Copilot Center of Excallence (CoE)</strong> resource ready for your organization.</p>
+<p>As Microsoft's Copilot for Microsoft 365 continues to improve and help organizations increase their producitivity, it <strong>can be hard to stay up-to-date</strong>. With this Viva Connections dashboard you have the the <strong>ultimate Copilot Center of Excallence (CoE)</strong> resource ready for your organization.</p>
 
 ## Benefits
 
