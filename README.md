@@ -31,81 +31,81 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 - Featured
 
-![alt text](image-17.png)
+<img src="image-17.png" style="width: 250px;">
 
 - Copilot Adoption
 
-![alt text](image-4.png)
+<img src="image-4.png" style="width: 250px;">
 
 - Academy
 
-![alt text](image-5.png)
+<img src="image-5.png" style="width: 250px;">
 
 - Copilot QnA
 
-![alt text](image-6.png)
+<img src="image-6.png" style="width: 250px;">
 
 - Learning
 
-![alt text](image-7.png)
+<img src="image-7.png" style="width: 250px;">
 
 - Blog
 
-![alt text](image-8.png)
+<img src="image-8.png" style="width: 250px;">
 
 - Dashboard
 
-![alt text](image-9.png)
+<img src="image-9.png" style="width: 250px;">
 
 - M365 Roadmap
 
-![alt text](image-10.png)
+<img src="image-10.png" style="width: 250px;">
 
 - Updates
 
-![alt text](image-11.png)
+<img src="image-11.png" style="width: 250px;">
 
 - Copilot Community
 
-![alt text](image-12.png)
+<img src="image-12.png" style="width: 250px;">
 
 - Prompt Buddy
 
-![alt text](image-13.png)
+<img src="image-13.png" style="width: 250px;">
 
 - Adoption
 
-![alt text](image-14.png)
+<img src="image-14.png" style="width: 250px;">
 
 - Prompts
 
-![alt text](image-15.png)
+<img src="image-15.png" style="width: 250px;">
 
 - Mechanics
 
-![alt text](image-19.png)
+<img src="image-19.png" style="width: 250px;">
 
 - Scenarios
 
 - Prompt Pulse
 
-![alt text](image-21.png)
+<img src="image-21.png" style="width: 250px;">
 
 - Workday
 
-![alt text](image-16.png)
+<img src="image-16.png" style="width: 250px;">
 
 - ServiceNow
 
-![alt text](image-22.png)
+<img src="image-22.png" style="width: 250px;">
 
 - Goals (for SuccessFactors)
 
-![alt text](image-18.png)
+<img src="image-18.png" style="width: 250px;">
 
 - Sponsored
 
-![alt text](image-20.png)
+<img src="image-20.png" style="width: 250px;">
 
 ## Is this free?
 
