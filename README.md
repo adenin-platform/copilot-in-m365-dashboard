@@ -168,4 +168,4 @@ Yes, this CoE dashboard is built using Viva Connections, the dashboard UI underl
 
 ## I'm a security researcher. Can I build this package myself by cloning the repo?
 
-Yes, this repo contains the entire source code. Either clone the repo and navigate your command line to `cd downloads/copilot-in-m365-dashboard`, or download the zipped version of the repo. Then execute `build.command` in your CLI to built the `cli.zip` archive from the source.
+Yes, this repo contains the entire source code. Either clone the repo and navigate your command line to `cd downloads/copilot-in-m365-dashboard`, or download the zipped version of the repo. Then execute `build.cmd` in your CLI to build the `cli.zip` archive from the source.
