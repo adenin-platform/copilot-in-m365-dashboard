@@ -29,7 +29,9 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 ## What Cards are included
 
-- Featured (to do)
+- Featured
+
+![alt text](image-17.png)
 
 - Copilot Adoption
 
@@ -79,21 +81,35 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 ![alt text](image-15.png)
 
-- Mechanics (to do)
+- Mechanics
 
-- Scenarios (to do)
+![alt text](image-19.png)
 
-- Workday (to do)
+- Scenarios
 
-- ServiceNow (to do)
+- Prompt Pulse
 
-- SuccessFactors (to do)
+![alt text](image-21.png)
 
-- Sponsored (to do)
+- Workday
+
+![alt text](image-16.png)
+
+- ServiceNow
+
+![alt text](image-22.png)
+
+- Goals (for SuccessFactors)
+
+![alt text](image-18.png)
+
+- Sponsored
+
+![alt text](image-20.png)
 
 ## Is this free?
 
-Yes
+Yes, we designed this Copilot in M365 CoE dashboard to be a free one-stop-shop for all your Copilot news and resources. Some of the Cards in this dashboard are pulling live Microsoft data, for example from their blogs; but others are meant to be installed in your organization to work. [Simply speak to our team](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=YcZMzgZFSE2MZMWwkKpG-1hGoYSsiA1AuSdSFitOj-xUN0wwMDRKRTBKTjVPWkRVR0hWUEZQR0FUNy4u) who will be happy to give you a no-obligation consultation on how to properly deploy your Copilot CoE dashboard.
 
 ## Can Adenin help with configuring?
 
