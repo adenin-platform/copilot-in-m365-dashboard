@@ -1,9 +1,9 @@
-# Copilot in M365 dashboard
-### Get every resource and updates for Copilot on your Viva Connections dashboard
+# Copilot in M365 Center of Excellence (CoE)
+### Get all Copilot resources, updates and related content as a convenient Viva Connections dashboard
 
 ![alt text](/img/cover.png)
 
-As Microsoft's Copilot for Microsoft 365 continues to improve and help organizations increase their producitivity, it can be hard to stay up-to-date. With this Viva Connections dashboard you have the the ultimate Copilot Center of Excallence (CoE) resource ready for your organization.
+<p class="lead">As Microsoft's Copilot for Microsoft 365 continues to improve and help organizations increase their producitivity, it <strong>can be hard to stay up-to-date</strong>. With this Viva Connections dashboard you have the the <strong>ultimate Copilot Center of Excallence (CoE)</strong> resource ready for your organization.</p>
 
 ## Benefits
 
@@ -11,6 +11,7 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 - 🚚 Entirely made with Adenin’s customizable [Adaptive Cards](www.adenin.com/card-maker) – you could make these for your organization, too
 - 📶 Works anywhere Viva Connections works (mobile, desktop, MS Teams)
 - 🏎️ Faster adoption and ROI for your Copilot in Microsoft 365 users
+- ⏰ Takes 5 minutes to install on your SharePoint sandbox (requires only a PC)
 
 
 ## How to install the command line tool
