@@ -7,7 +7,7 @@
 
 ## Benefits
 
-- 🛠️ Contains useful resources, like roadmap, workshops, …
+- 🛠️ Contains useful resources, like roadmap, courses, popular prompts,…
 - 🚚 Entirely made with Adenin’s customizable [Adaptive Cards](www.adenin.com/card-maker) – you could make these for your organization, too
 - 📶 Works anywhere Viva Connections works (mobile, desktop, MS Teams)
 - 🏎️ Faster adoption and ROI for your Copilot in Microsoft 365 users
