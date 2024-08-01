@@ -7,7 +7,7 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 ## How to install the command line tool
 
-1. Download the `.zip` archive
+1. Download the [`.zip`](https://github.com/adenin-platform/copilot-in-m365-dashboard/archive/refs/heads/main.zip) archive
 
 2. Unpack the archive and open `adenin.PnPTool.exe` as an Administrator
 
