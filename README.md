@@ -41,102 +41,102 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
     <tr>
       <td>Featured</td>
       <td><img src="image-23.png" style="width: 160px;"></td>
-      <td><i>📡 Shows live data</i></td>
+      <td><i>📡 Shows live data</i><br/>Shows you relevant articles from the world of Copilot and other adjacent M365 product developments</td>
     </tr>
     <tr>
       <td>Copilot Adoption</td>
       <td><img src="image-4.png" style="width: 160px;"></td>
-      <td><i>📡 Shows live data</i></td>
+      <td><i>📡 Shows live data</i><br/>Summary of Microsoft resources geared to drive adoption</td>
     </tr>
     <tr>
       <td>Academy</td>
       <td><img src="image-5.png" style="width: 160px;"></td>
-      <td><i>📡 Shows live data</i></td>
+      <td><i>📡 Shows live data</i><br/>List of courses that help you get the most from your Copilot initiative</td>
     </tr>
     <tr>
       <td>Copilot QnA</td>
       <td><img src="image-6.png" style="width: 160px;"></td>
-      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)</td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Let's users ask their Copilot questions and browse answers given by the community</td>
     </tr>
     <tr>
       <td>Learning</td>
       <td><img src="image-7.png" style="width: 310px;"></td>
-      <td></td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Shows you Viva Learning courses that are relevant to you</td>
     </tr>
     <tr>
       <td>Blog</td>
       <td><img src="image-8.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>📡 Shows live data</i><br/>Most recent updates from Microsoft's Copilot in M365 blog</td>
     </tr>
     <tr>
       <td>Dashboard</td>
       <td><img src="image-9.png" style="width: 310px;"></td>
-      <td></td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Summary of your Copilot Adoption dashboard, e.g. usage metrics</td>
     </tr>
     <tr>
       <td>M365 Roadmap</td>
       <td><img src="image-10.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>📡 Shows live data</i><br/>Most recent announcements from the Microsoft 365 roadmap</td>
     </tr>
     <tr>
       <td>Updates</td>
       <td><img src="image-11.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Shows the Microsoft Teams Updates app on your Viva dashboard</td>
     </tr>
     <tr>
       <td>Copilot Community</td>
       <td><img src="image-12.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Shows you an aggregated view of your Viva Engage Copilot community</td>
     </tr>
     <tr>
       <td>Prompt Buddy</td>
       <td><img src="image-13.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Summary of dedicated Prompt Buddy Power App to help users discover good prompts</td>
     </tr>
     <tr>
       <td>Adoption</td>
       <td><img src="image-14.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>📡 Shows live data</i><br/>Microsoft resources that help drive user adoption across Microsoft products</td>
     </tr>
     <tr>
       <td>Prompts</td>
       <td><img src="image-15.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>📡 Shows live data</i><br/>Discover Microsoft-recommended prompts for Copilot in M365</td>
     </tr>
     <tr>
       <td>Mechanics</td>
       <td><img src="image-27.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>📡 Shows live data</i><br/></td>
     </tr>
     <tr>
       <td>Scenarios</td>
       <td><img src="image-30.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>📡 Shows live data</i></td>
     </tr>
     <tr>
       <td>Prompt Pulse</td>
       <td><img src="image-24.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)</td>
     </tr>
     <tr>
       <td>Workday</td>
       <td><img src="image-31.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)</td>
     </tr>
     <tr>
       <td>ServiceNow</td>
       <td><img src="image-32.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)</td>
     </tr>
     <tr>
       <td>SuccessFactors Goals</td>
       <td><img src="image-29.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)</td>
     </tr>
     <tr>
       <td>Sponsored</td>
       <td><img src="image-26.png" style="width: 160px;"></td>
-      <td></td>
+      <td>Reminder about Adenin's service offering that can customize and connect any of the other Cards to your data sources</td>
     </tr>
   </tbody>
 </table>
