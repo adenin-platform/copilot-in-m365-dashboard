@@ -1,7 +1,7 @@
 # Copilot in M365 dashboard
 ### Get every resource and updates for Copilot on your Viva Connections dashboard
 
-![alt text](Viva_Connections_with_Copilot_in_M365_resources.png)
+![alt text](/img/cover.png)
 
 As Microsoft's Copilot for Microsoft 365 continues to improve and help organizations increase their producitivity, it can be hard to stay up-to-date. With this Viva Connections dashboard you have the the ultimate Copilot Center of Excallence (CoE) resource ready for your organization.
 
@@ -165,4 +165,6 @@ You can find these Cards on your Viva Connections dashboard, which you can visit
 
 Yes, this CoE dashboard is built using Viva Connections, the dashboard UI underlying both SharePoint and Microsoft Teams.
 
+## I'm a security researcher. Can I build this package myself by cloning the repo?
 
+Yes, this repo contains the entire source code. Either clone the repo and navigate your command line to `cd downloads/copilot-in-m365-dashboard`, or download the zipped version of the repo. Then execute `build.command` in your CLI to built the `cli.zip` archive from the source.
