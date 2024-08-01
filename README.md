@@ -5,9 +5,17 @@
 
 As Microsoft's Copilot for Microsoft 365 continues to improve and help organizations increase their producitivity, it can be hard to stay up-to-date. With this Viva Connections dashboard you have the the ultimate Copilot Center of Excallence (CoE) resource ready for your organization.
 
+## Benefits
+
+- 🛠️ Contains useful resources, like roadmap, workshops, …
+- 🚚 Entirely made with Adenin’s customizable [Adaptive Cards](www.adenin.com/card-maker) – you could make these for your organization, too
+- 📶 Works anywhere Viva Connections works (mobile, desktop, MS Teams)
+- 🏎️ Faster adoption and ROI for your Copilot in Microsoft 365 users
+
+
 ## How to install the command line tool
 
-1. Download the [`.zip`](https://github.com/adenin-platform/copilot-in-m365-dashboard/raw/main/cli.zip) archive
+1. Download the [`.zip`](/raw/main/cli.zip) archive
 
 2. Unpack the archive and open `adenin.PnPTool.exe` as an Administrator
 
@@ -17,15 +25,15 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 <img src="/img/image-1.png" style="width: 500px;">
 
-4. The command line will open the browser so you can authenticate with SharePoint
+4. The command line will open the browser so you can authenticate with SharePoint. Once authenticated, you can close the tab.
 
 <img src="/img/image-2.png" style="width: 700px;">
 
-5. Once authenticated, you can close the tab. The command line tool will now install the Cards on your Viva Connections dashboard. This shuold take 2-3 minutes.
+5. The command line tool will now install the Cards on your Viva Connections dashboard. This shuold take 2-3 minutes.
 
 <img src="/img/image-3.png" style="width: 700px;">
 
-6. Once done, the command line will close by itself. You can now navigate to your Viva Connections dashboard.
+6. Once done, the command line will close by itself. Now navigate to your Viva Connections dashboard and hit Refresh.
 
 ## What Cards are included
 
@@ -60,7 +68,7 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
     </tr>
     <tr>
       <td>Learning</td>
-      <td><img src="/img/image-7.png" style="width: 310px;"></td>
+      <td><img src="/img/image-7.png" style="min-width: 270px;"></td>
       <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Shows you Viva Learning courses that are relevant to you</td>
     </tr>
     <tr>
@@ -70,7 +78,7 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
     </tr>
     <tr>
       <td>Dashboard</td>
-      <td><img src="/img/image-9.png" style="width: 310px;"></td>
+      <td><img src="/img/image-9.png" style="min-width: 270px;"></td>
       <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Summary of your Copilot Adoption dashboard, e.g. usage metrics</td>
     </tr>
     <tr>
@@ -147,12 +155,14 @@ Yes, we designed this Copilot in M365 CoE dashboard to be a free one-stop-shop f
 
 <h2 id="how">Can Adenin help with configuring?</h2>
 
-Some of the Cards in this package are updating themselves with the latest CoE resources for you. And others (e.g. Dashboard, Copilot QnA, Prompt Buddy, Workday, SuccesFactors, ServiceNow, Learning) need to be configured with your organization's SharePoint instance (for example to install the Prompt Buddy PowerApp or set up the relevant Viva Engage sites). Adenin can do this job for you, [just reach out](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=YcZMzgZFSE2MZMWwkKpG-1hGoYSsiA1AuSdSFitOj-xUN0wwMDRKRTBKTjVPWkRVR0hWUEZQR0FUNy4u) for a complimentary no-obgliation consultation and one of our experts can help you get your Copilot CoE off the ground.
+Some of the Cards in this package are updating themselves with the latest CoE resources for you. And others marked with a 🔌 symbol (e.g. Dashboard, Copilot QnA, Prompt Buddy, Workday, etc.) need to be configured with your organization's SharePoint instance (for example to install the Prompt Buddy PowerApp or set up the relevant Viva Engage sites). Adenin can do this job for you, [just reach out](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=YcZMzgZFSE2MZMWwkKpG-1hGoYSsiA1AuSdSFitOj-xUN0wwMDRKRTBKTjVPWkRVR0hWUEZQR0FUNy4u) for a complimentary no-obgliation consultation and one of our experts can help you get your Copilot CoE off the ground.
 
 ## Where do I find these Cards after the installation?
 
-On your Viva Connections dashboard.
+You can find these Cards on your Viva Connections dashboard, which you can visit by going to `https://<your-sharepoint>.sharepoint.com//_layouts/15/vivahome.aspx` or `https://<your-sharepoint>.sharepoint.com/SitePages/Dashboard.aspx`
 
 ## Does this work in SharePoint or in MS Teams?
 
-In both
+Yes, this CoE dashboard is built using Viva Connections, the dashboard UI underlying both SharePoint and Microsoft Teams.
+
+
