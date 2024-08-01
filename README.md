@@ -41,22 +41,22 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
     <tr>
       <td>Featured</td>
       <td><img src="image-23.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>📡 Shows live data</i></td>
     </tr>
     <tr>
       <td>Copilot Adoption</td>
       <td><img src="image-4.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>📡 Shows live data</i></td>
     </tr>
     <tr>
       <td>Academy</td>
       <td><img src="image-5.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>📡 Shows live data</i></td>
     </tr>
     <tr>
       <td>Copilot QnA</td>
       <td><img src="image-6.png" style="width: 160px;"></td>
-      <td></td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)</td>
     </tr>
     <tr>
       <td>Learning</td>
@@ -144,8 +144,8 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 | Card                | Image                                           | Note |
 |---------------------|-------------------------------------------------|------|
-| Featured            | <img src="image-23.png" style="width: 160px;">  | 🔌     |
-| Copilot Adoption    | <img src="image-4.png" style="width: 160px;">   | 📡     |
+| Featured            | <img src="image-23.png" style="width: 160px;">  |      |
+| Copilot Adoption    | <img src="image-4.png" style="width: 160px;">   |      |
 | Academy             | <img src="image-5.png" style="width: 160px;">   |      |
 | Copilot QnA         | <img src="image-6.png" style="width: 160px;">   |      |
 | Learning            | <img src="image-7.png" style="width: 310px;">   |      |
