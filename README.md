@@ -15,7 +15,7 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 ## How to install the command line tool
 
-1. Download the [`.zip`](/raw/main/cli.zip) archive
+1. Download the [`.zip`](cli.zip) archive
 
 2. Unpack the archive and open `adenin.PnPTool.exe` as an Administrator
 
