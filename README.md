@@ -106,32 +106,32 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
     <tr>
       <td>Mechanics</td>
       <td><img src="image-27.png" style="width: 160px;"></td>
-      <td><i>📡 Shows live data</i><br/></td>
+      <td><i>📡 Shows live data</i><br/>Relevant videos from Microsoft Mechanics YouTube channel</td>
     </tr>
     <tr>
       <td>Scenarios</td>
       <td><img src="image-30.png" style="width: 160px;"></td>
-      <td><i>📡 Shows live data</i></td>
+      <td><i>📡 Shows live data</i><br/>Learn what Copilot can do for different user roles in your organization</td>
     </tr>
     <tr>
       <td>Prompt Pulse</td>
       <td><img src="image-24.png" style="width: 160px;"></td>
-      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)</td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Summary of the dedicated Prompt Pulse Power App to help discover new and exciting prompts</td>
     </tr>
     <tr>
       <td>Workday</td>
       <td><img src="image-31.png" style="width: 160px;"></td>
-      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)</td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Shows you the PTO allowance from your Workday instance</td>
     </tr>
     <tr>
       <td>ServiceNow</td>
       <td><img src="image-32.png" style="width: 160px;"></td>
-      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)</td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Shows you a list of incidents from the ServiceNow® platform</td>
     </tr>
     <tr>
       <td>SuccessFactors Goals</td>
       <td><img src="image-29.png" style="width: 160px;"></td>
-      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)</td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>See your or your teams' goals</td>
     </tr>
     <tr>
       <td>Sponsored</td>
