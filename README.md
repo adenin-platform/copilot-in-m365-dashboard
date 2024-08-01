@@ -103,7 +103,7 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 - SuccessFactors Goals
 
-<img src="image-18.png" style="width: 160px;">
+<img src="image-29.png" style="width: 160px;">
 
 - Sponsored
 
