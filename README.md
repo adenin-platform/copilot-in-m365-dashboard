@@ -31,7 +31,7 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 - Featured
 
-<img src="image-17.png" style="width: 250px;">
+<img src="image-23.png" style="width: 250px;">
 
 - Copilot Adoption
 
@@ -83,13 +83,15 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 - Mechanics
 
-<img src="image-19.png" style="width: 250px;">
+<img src="image-27.png" style="width: 250px;">
 
 - Scenarios
 
+<img src="image-28.png" style="width: 250px;">
+
 - Prompt Pulse
 
-<img src="image-21.png" style="width: 250px;">
+<img src="image-24.png" style="width: 250px;">
 
 - Workday
 
@@ -105,7 +107,7 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 - Sponsored
 
-<img src="image-20.png" style="width: 250px;">
+<img src="image-26.png" style="width: 250px;">
 
 ## Is this free?
 
