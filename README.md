@@ -29,10 +29,123 @@ As Microsoft's Copilot for Microsoft 365 continues to improve and help organizat
 
 ## What Cards are included
 
+<table>
+  <thead>
+    <tr>
+      <th>Card</th>
+      <th>Image</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Featured</td>
+      <td><img src="image-23.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Copilot Adoption</td>
+      <td><img src="image-4.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Academy</td>
+      <td><img src="image-5.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Copilot QnA</td>
+      <td><img src="image-6.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Learning</td>
+      <td><img src="image-7.png" style="width: 310px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Blog</td>
+      <td><img src="image-8.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dashboard</td>
+      <td><img src="image-9.png" style="width: 310px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M365 Roadmap</td>
+      <td><img src="image-10.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Updates</td>
+      <td><img src="image-11.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Copilot Community</td>
+      <td><img src="image-12.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Prompt Buddy</td>
+      <td><img src="image-13.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Adoption</td>
+      <td><img src="image-14.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Prompts</td>
+      <td><img src="image-15.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mechanics</td>
+      <td><img src="image-27.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Scenarios</td>
+      <td><img src="image-30.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Prompt Pulse</td>
+      <td><img src="image-24.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Workday</td>
+      <td><img src="image-31.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ServiceNow</td>
+      <td><img src="image-32.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SuccessFactors Goals</td>
+      <td><img src="image-29.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sponsored</td>
+      <td><img src="image-26.png" style="width: 160px;"></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
 | Card                | Image                                           | Note |
 |---------------------|-------------------------------------------------|------|
-| Featured            | <img src="image-23.png" style="width: 160px;">  |      |
-| Copilot Adoption    | <img src="image-4.png" style="width: 160px;">   |      |
+| Featured            | <img src="image-23.png" style="width: 160px;">  | 🔌     |
+| Copilot Adoption    | <img src="image-4.png" style="width: 160px;">   | 📡     |
 | Academy             | <img src="image-5.png" style="width: 160px;">   |      |
 | Copilot QnA         | <img src="image-6.png" style="width: 160px;">   |      |
 | Learning            | <img src="image-7.png" style="width: 310px;">   |      |
