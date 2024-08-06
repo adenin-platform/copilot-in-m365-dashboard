@@ -128,6 +128,16 @@
       <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Summary of the dedicated Prompt Pulse Power App to help discover new and exciting prompts</td>
     </tr>
     <tr>
+      <td>Early Adopters</td>
+      <td><img src="/img/early_adopters.png" style="width: 160px;"></td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Set up a dedicated Viva Engage community with special features to drive Copilot adoption</td>
+    </tr>
+    <tr>
+      <td>Teams Premium</td>
+      <td><img src="/img/teams_premium.png" style="width: 160px;"></td>
+      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>See a summary of the Teams Premium usage report from your Admin center</td>
+    </tr>
+    <tr>
       <td>Workday</td>
       <td><img src="/img/image-31.png" style="width: 160px;"></td>
       <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Shows you the PTO allowance from your Workday instance</td>
