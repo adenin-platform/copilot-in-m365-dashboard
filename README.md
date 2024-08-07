@@ -34,7 +34,13 @@
 
 <img src="/img/image-3.png" style="width: 700px;">
 
-6. Once done, the command line will close by itself. Now navigate to your Viva Connections dashboard and hit Refresh.
+6. Once done, the command line will close by itself. 
+
+## Result
+
+Once your installation has gone through, navigate to your Viva Connections dashboard and hit Refresh. You'll go from an empty dashboard to one that has all the above Cards showing.
+
+<img src="/img/before-and-after-dashboard.gif">
 
 ## What Cards are included
 
