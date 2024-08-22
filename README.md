@@ -170,6 +170,10 @@ Once your installation has gone through, navigate to your Viva Connections dashb
 
 Yes, we designed this Copilot in M365 CoE dashboard to be a free one-stop-shop for all your Copilot news and resources. Some of the Cards in this dashboard are pulling live Microsoft data, for example from their blogs; but others are meant to be installed in your organization to work. [Simply speak to our team](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=YcZMzgZFSE2MZMWwkKpG-1hGoYSsiA1AuSdSFitOj-xUN0wwMDRKRTBKTjVPWkRVR0hWUEZQR0FUNy4u) who will be happy to give you a no-obligation consultation on how to properly deploy your Copilot CoE dashboard.
 
+## Does it require Copilot for M365 licenses?
+
+No, all you need is access to Viva Connections dashboard.
+
 <h2 id="how">Can Adenin help with configuring?</h2>
 
 Some of the Cards in this package are updating themselves with the latest CoE resources for you. And others marked with a 🔌 symbol (e.g. Dashboard, Copilot QnA, Prompt Buddy, Workday, etc.) need to be configured with your organization's SharePoint instance (for example to install the Prompt Buddy PowerApp or set up the relevant Viva Engage sites). Adenin can do this job for you, [just reach out](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=YcZMzgZFSE2MZMWwkKpG-1hGoYSsiA1AuSdSFitOj-xUN0wwMDRKRTBKTjVPWkRVR0hWUEZQR0FUNy4u) for a complimentary no-obgliation consultation and one of our experts can help you get your Copilot CoE off the ground.
