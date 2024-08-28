@@ -64,39 +64,11 @@ const string appId = "744fb9bd-55d9-4bf3-8d22-3c9ee99819a5";
 const string platformApi = "https://app.adenin.com/api/notebook/copy/templates-copilot/{0}";
 const string cardUrlBase = "https://app.adenin.com/app/assistant/card/{0}";
 const string apiErrorMessage = "Skipping {Card} as platform returned status {Status} during creation";
-const string cardExistsWarning = "Skipping {Card} as it exists already in the dashboard";
-const string cardUrlProp = "cardUrl";
 const string cardUrlPlaceholder = "{0}";
 const string cardJson = $$"""
                           {
                               "appIntegrations": true,
                               "channel": "app_integrations",
-                              "types": {
-                                  "info": {
-                                      "icon" :"ⓘ",
-                                      "color": "emphasis"
-                                  },
-                                  "success": {
-                                      "icon": "✅",
-                                      "color": "good"
-                                  },
-                                  "error": {
-                                      "icon": "❌",
-                                      "color": "attention"
-                                  },
-                                  "blocked": {
-                                      "icon": "🚫",
-                                      "color": "attention"
-                                  },
-                                  "warning": {
-                                      "icon": "⚠",
-                                      "color": "warning"
-                                  },
-                                  "severeWarning": {
-                                      "icon": "❗",
-                                      "color": "warning"
-                                  }
-                              },
                               "cardUrl": "{{cardUrlPlaceholder}}"
                           }
                           """;
@@ -117,16 +89,6 @@ using (var scope = host.Services.CreateScope())
 
     using var context = await pnpContextFactory.CreateAsync("SiteToWorkWith");
 
-    var dashboard = await context.Web.GetVivaDashboardAsync();
-
-    if (dashboard is null)
-    {
-        logger.LogError("Site {Site} does not have a Viva dashboard instance", sharepointSite);
-        return;
-    }
-
-    logger.LogInformation("Viva dashboard is available with {Count} cards currently existing", dashboard.ACEs.Count);
-
     var appManager = context.GetTenantAppManager();
     var integrationsApp = await appManager.AddAsync("./adenin-app-integrations.sppkg", true);
     var deploySucceeded = await appManager.DeployAsync(integrationsApp.Id);
@@ -137,11 +99,43 @@ using (var scope = host.Services.CreateScope())
         return;
     }
 
+    var pages = await context.Web.GetPagesAsync("coe.aspx");
+    var page = pages.FirstOrDefault();
+
+    if (page is not null)
+    {
+        await page.DeleteAsync();
+    }
+
+    page = await context.Web.NewPageAsync(PageLayoutType.Article);
+
+    var numRows = cardList.Cards.Length / 3;
+    var remainder = cardList.Cards.Length % 3;
+
+    if (remainder > 0)
+    {
+        numRows++;
+    }
+
+    for (var i = 0; i < numRows; i++)
+    {
+        page.AddSection(CanvasSectionTemplate.ThreeColumn, 1);
+    }
+
+    var availableComponents = await page.AvailablePageComponentsAsync();
+    var thirdPartyWebPartComponent = availableComponents.First(p => p.Id == page.DefaultWebPartToWebPartId(DefaultWebPart.ClientWebPart));
+
+    thirdPartyWebPartComponent.Id = appId;
+    thirdPartyWebPartComponent.Name = "App integrations";
+
     var token = await context.AuthenticationProvider.GetAccessTokenAsync(new Uri("https://graph.microsoft.com"));
 
     using var client = new HttpClient();
 
     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", $"office-365:{token}");
+
+    var currentRow = 0;
+    var currentColumn = 0;
 
     foreach (var card in cardList.Cards)
     {
@@ -162,30 +156,23 @@ using (var scope = host.Services.CreateScope())
         }
 
         var cardUrl = string.Format(cardUrlBase, result.Data.Id);
-        var exists = dashboard.ACEs.Any(ace => ace.Id == appId && ace.JsonProperties.TryGetProperty(cardUrlProp, out var property) && property.GetString() == cardUrl);
+        var webPart = page.NewWebPart(thirdPartyWebPartComponent);
 
-        if (exists)
+        webPart.Title = result.Data.Title;
+        webPart.PropertiesJson = cardJson.Replace(cardUrlPlaceholder, cardUrl);
+
+        page.AddControl(webPart, page.Sections[currentRow].Columns[currentColumn]);
+
+        currentColumn++;
+
+        if (currentColumn > 2)
         {
-            logger.LogWarning(cardExistsWarning, card.Name);
-            continue;
+            currentRow++;
+            currentColumn = 0;
         }
-
-        var customAce = dashboard.NewACE(Guid.Parse(appId));
-
-        customAce.Title = result.Data.Title;
-        customAce.CardSize = card.Size;
-
-        if (result.Data.Logo is not null)
-        {
-            customAce.IconProperty = result.Data.Logo;
-        }
-
-        customAce.Properties = JsonSerializer.Deserialize<JsonElement>(cardJson.Replace(cardUrlPlaceholder, cardUrl));
-
-        dashboard.AddACE(customAce);
     }
 
-    await dashboard.SaveAsync();
+    await page.SaveAsync("coe.aspx");
 }
 
 host.Dispose();

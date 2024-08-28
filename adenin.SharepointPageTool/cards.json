@@ -1,0 +1,88 @@
+{
+  "cards": [
+    {
+      "name": "featured",
+      "size": 1
+    },
+    {
+      "name": "copilot-adoption",
+      "size": 0
+    },
+    {
+      "name": "adoption",
+      "size": 0
+    },
+    {
+      "name": "academy",
+      "size": 0
+    },
+    {
+      "name": "prompts",
+      "size": 0
+    },
+    {
+      "name": "blog",
+      "size": 0
+    },
+    {
+      "name": "dashboard",
+      "size": 1
+    },
+    {
+      "name": "roadmap",
+      "size": 0
+    },
+    {
+      "name": "community",
+      "size": 0
+    },
+    {
+      "name": "learning",
+      "size": 1
+    },
+    {
+      "name": "prompt-pulse",
+      "size": 0
+    },
+    {
+      "name": "mechanics",
+      "size": 0
+    },
+    {
+      "name": "scenarios",
+      "size": 0
+    },
+    {
+      "name": "prompt-buddy",
+      "size": 0
+    },
+    {
+      "name": "early-adopters",
+      "size": 0
+    },
+    {
+      "name": "teams-premium",
+      "size": 0
+    },
+    {
+      "name": "sap",
+      "size": 0
+    },
+    {
+      "name": "workday",
+      "size": 0
+    },
+    {
+      "name": "servicenow",
+      "size": 0
+    },
+    {
+      "name": "qna",
+      "size": 0
+    },
+    {
+      "name": "sponsored",
+      "size": 0
+    }
+  ]
+}

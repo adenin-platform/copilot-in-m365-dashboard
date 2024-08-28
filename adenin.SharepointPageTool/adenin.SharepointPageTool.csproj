@@ -13,4 +13,13 @@
 	<PackageReference Include="PnP.Core.Auth" Version="1.13.0" />
   </ItemGroup>
 	
+  <ItemGroup>
+    <None Update="adenin-app-integrations.sppkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="cards.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+	
 </Project>
