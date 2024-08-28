@@ -104,11 +104,6 @@ Once your installation has gone through, navigate to your Viva Connections dashb
       <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Shows you an aggregated view of your Viva Engage Copilot community</td>
     </tr>
     <tr>
-      <td>Prompt Buddy</td>
-      <td><img src="/img/image-13.png" style="width: 160px;"></td>
-      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Summary of dedicated Prompt Buddy Power App to help users discover good prompts</td>
-    </tr>
-    <tr>
       <td>Adoption</td>
       <td><img src="/img/image-14.png" style="width: 160px;"></td>
       <td><i>📡 Shows live data</i><br/>Microsoft resources that help drive user adoption across Microsoft products</td>
@@ -123,15 +118,15 @@ Once your installation has gone through, navigate to your Viva Connections dashb
       <td><img src="/img/image-27.png" style="width: 160px;"></td>
       <td><i>📡 Shows live data</i><br/>Relevant videos from Microsoft Mechanics YouTube channel</td>
     </tr>
+        <tr>
+      <td>Glossary</td>
+      <td><img src="/img/glossary.png" style="width: 160px;"></td>
+      <td><i>📡 Shows live data</i><br/>Reference useful terminology for your Copilot experience</td>
+    </tr>
     <tr>
       <td>Scenarios</td>
       <td><img src="/img/image-30.png" style="width: 160px;"></td>
       <td><i>📡 Shows live data</i><br/>Learn what Copilot can do for different user roles in your organization</td>
-    </tr>
-    <tr>
-      <td>Prompt Pulse</td>
-      <td><img src="/img/image-24.png" style="width: 160px;"></td>
-      <td><i>🔌 Configure post-installation</i> (<a href="#how" style="text-decoration: underline;">How?</a>)<br/>Summary of the dedicated Prompt Pulse Power App to help discover new and exciting prompts</td>
     </tr>
     <tr>
       <td>Early Adopters</td>
