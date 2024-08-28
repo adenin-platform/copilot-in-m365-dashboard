@@ -46,9 +46,9 @@ var host = Host
                     RedirectUri = new Uri("http://localhost")
                 }
             });
-            
+
             options.Credentials.DefaultConfiguration = "interactive";
-            
+
             options.Sites.Add("SiteToWorkWith", new PnPCoreAuthenticationSiteOptions
             {
                 AuthenticationProviderName = "interactive"
@@ -154,7 +154,7 @@ using (var scope = host.Services.CreateScope())
         }
 
         var result = await response.Content.ReadFromJsonAsync<PlatformResponse<NotebookCopyResult>>();
-        
+
         if (result?.ErrorCode is not 0)
         {
             logger.LogError(apiErrorMessage, card.Name, result?.ErrorCode);
@@ -174,14 +174,14 @@ using (var scope = host.Services.CreateScope())
 
         customAce.Title = result.Data.Title;
         customAce.CardSize = card.Size;
-        
+
         if (result.Data.Logo is not null)
         {
             customAce.IconProperty = result.Data.Logo;
         }
-        
+
         customAce.Properties = JsonSerializer.Deserialize<JsonElement>(cardJson.Replace(cardUrlPlaceholder, cardUrl));
-        
+
         dashboard.AddACE(customAce);
     }
 
