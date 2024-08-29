@@ -21,6 +21,10 @@ else
     sharepointSite = args[0];
 }
 
+Console.WriteLine("Would you like to provision Viva Dashboard [V] or a SharePoint Page [S]? V/S:");
+
+var operation = Console.ReadLine()!.ToUpper();
+
 var host = Host
     .CreateDefaultBuilder()
     .ConfigureServices((_, services) =>
@@ -67,7 +71,8 @@ const string apiErrorMessage = "Skipping {Card} as platform returned status {Sta
 const string cardExistsWarning = "Skipping {Card} as it exists already in the dashboard";
 const string cardUrlProp = "cardUrl";
 const string cardUrlPlaceholder = "{0}";
-const string cardJson = $$"""
+
+const string vivaCardJson = $$"""
                           {
                               "appIntegrations": true,
                               "channel": "app_integrations",
@@ -101,6 +106,17 @@ const string cardJson = $$"""
                           }
                           """;
 
+const string pageCardJson = $$"""
+                          {
+                              "description": "App integrations",
+                              "height": "470px",
+                              "borderToggle": true,
+                              "appIntegrations": true,
+                              "channel": "app_integrations",
+                              "cardUrl": "{{cardUrlPlaceholder}}"
+                          }
+                          """;
+
 var cardsJson = await File.ReadAllTextAsync("./cards.json");
 var cardList = JsonSerializer.Deserialize<CardList>(cardsJson, SerializerOptions.CamelCase);
 
@@ -116,16 +132,6 @@ using (var scope = host.Services.CreateScope())
     var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
 
     using var context = await pnpContextFactory.CreateAsync("SiteToWorkWith");
-
-    var dashboard = await context.Web.GetVivaDashboardAsync();
-
-    if (dashboard is null)
-    {
-        logger.LogError("Site {Site} does not have a Viva dashboard instance", sharepointSite);
-        return;
-    }
-
-    logger.LogInformation("Viva dashboard is available with {Count} cards currently existing", dashboard.ACEs.Count);
 
     var appManager = context.GetTenantAppManager();
     var integrationsApp = await appManager.AddAsync("./adenin-app-integrations.sppkg", true);
@@ -143,49 +149,134 @@ using (var scope = host.Services.CreateScope())
 
     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", $"office-365:{token}");
 
-    foreach (var card in cardList.Cards)
+    switch (operation)
     {
-        var response = await client.GetAsync(string.Format(platformApi, card.Name));
+        case "V":
+            var dashboard = await context.Web.GetVivaDashboardAsync();
 
-        if (!response.IsSuccessStatusCode)
-        {
-            logger.LogError(apiErrorMessage, card.Name, response.StatusCode);
-            continue;
-        }
+            if (dashboard is null)
+            {
+                logger.LogError("Site {Site} does not have a Viva dashboard instance", sharepointSite);
+                return;
+            }
 
-        var result = await response.Content.ReadFromJsonAsync<PlatformResponse<NotebookCopyResult>>();
-        
-        if (result?.ErrorCode is not 0)
-        {
-            logger.LogError(apiErrorMessage, card.Name, result?.ErrorCode);
-            continue;
-        }
+            logger.LogInformation("Viva dashboard is available with {Count} cards currently existing", dashboard.ACEs.Count);
 
-        var cardUrl = string.Format(cardUrlBase, result.Data.Id);
-        var exists = dashboard.ACEs.Any(ace => ace.Id == appId && ace.JsonProperties.TryGetProperty(cardUrlProp, out var property) && property.GetString() == cardUrl);
+            foreach (var card in cardList.Cards)
+            {
+                var response = await client.GetAsync(string.Format(platformApi, card.Name));
 
-        if (exists)
-        {
-            logger.LogWarning(cardExistsWarning, card.Name);
-            continue;
-        }
+                if (!response.IsSuccessStatusCode)
+                {
+                    logger.LogError(apiErrorMessage, card.Name, response.StatusCode);
+                    continue;
+                }
 
-        var customAce = dashboard.NewACE(Guid.Parse(appId));
+                var result = await response.Content.ReadFromJsonAsync<PlatformResponse<NotebookCopyResult>>();
 
-        customAce.Title = result.Data.Title;
-        customAce.CardSize = card.Size;
-        
-        if (result.Data.Logo is not null)
-        {
-            customAce.IconProperty = result.Data.Logo;
-        }
-        
-        customAce.Properties = JsonSerializer.Deserialize<JsonElement>(cardJson.Replace(cardUrlPlaceholder, cardUrl));
-        
-        dashboard.AddACE(customAce);
+                if (result?.ErrorCode is not 0)
+                {
+                    logger.LogError(apiErrorMessage, card.Name, result?.ErrorCode);
+                    continue;
+                }
+
+                var cardUrl = string.Format(cardUrlBase, result.Data.Id);
+                var exists = dashboard.ACEs.Any(ace => ace.Id == appId && ace.JsonProperties.TryGetProperty(cardUrlProp, out var property) && property.GetString() == cardUrl);
+
+                if (exists)
+                {
+                    logger.LogWarning(cardExistsWarning, card.Name);
+                    continue;
+                }
+
+                var customAce = dashboard.NewACE(Guid.Parse(appId));
+
+                customAce.Title = result.Data.Title;
+                customAce.CardSize = card.Size;
+
+                if (result.Data.Logo is not null)
+                {
+                    customAce.IconProperty = result.Data.Logo;
+                }
+
+                customAce.Properties = JsonSerializer.Deserialize<JsonElement>(vivaCardJson.Replace(cardUrlPlaceholder, cardUrl));
+
+                dashboard.AddACE(customAce);
+            }
+
+            await dashboard.SaveAsync();
+            break;
+        case "S":
+            var pages = await context.Web.GetPagesAsync("coe.aspx");
+            var page = pages.FirstOrDefault();
+
+            if (page is not null)
+            {
+                await page.DeleteAsync();
+            }
+
+            page = await context.Web.NewPageAsync(PageLayoutType.Article);
+
+            var numRows = cardList.Cards.Length / 3;
+            var remainder = cardList.Cards.Length % 3;
+
+            if (remainder > 0)
+            {
+                numRows++;
+            }
+
+            for (var i = 0; i < numRows; i++)
+            {
+                page.AddSection(CanvasSectionTemplate.ThreeColumn, 1);
+            }
+
+            var availableComponents = page.AvailablePageComponents().Where(c => c.ComponentType == 1);
+            var thirdPartyWebPartComponent = availableComponents.First(c => c.Name == "App integrations");
+
+            var currentRow = 0;
+            var currentColumn = 0;
+
+            foreach (var card in cardList.Cards)
+            {
+                var response = await client.GetAsync(string.Format(platformApi, card.Name));
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    logger.LogError(apiErrorMessage, card.Name, response.StatusCode);
+                    continue;
+                }
+
+                var result = await response.Content.ReadFromJsonAsync<PlatformResponse<NotebookCopyResult>>();
+
+                if (result?.ErrorCode is not 0)
+                {
+                    logger.LogError(apiErrorMessage, card.Name, result?.ErrorCode);
+                    continue;
+                }
+
+                var cardUrl = string.Format(cardUrlBase, result.Data.Id);
+                var webPart = page.NewWebPart(thirdPartyWebPartComponent);
+
+                webPart.Title = result.Data.Title;
+                webPart.PropertiesJson = pageCardJson.Replace(cardUrlPlaceholder, cardUrl);
+
+                page.AddControl(webPart, page.Sections[currentRow].Columns[currentColumn]);
+
+                currentColumn++;
+
+                if (currentColumn > 2)
+                {
+                    currentRow++;
+                    currentColumn = 0;
+                }
+            }
+
+            await page.SaveAsync("coe.aspx");
+            break;
+        default:
+            logger.LogWarning("Operation {Operation} is not valid, exiting", operation);
+            break;
     }
-
-    await dashboard.SaveAsync();
 }
 
 host.Dispose();
