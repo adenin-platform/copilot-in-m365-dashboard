@@ -5,8 +5,10 @@ using PnP.Core.Auth.Services.Builder.Configuration;
 using PnP.Core.Model.SharePoint;
 using PnP.Core.Services;
 using PnP.Core.Services.Builder.Configuration;
+using System.Buffers;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
+using System.Text;
 using System.Text.Json;
 
 string sharepointSite;
@@ -60,13 +62,14 @@ var host = Host
 
 await host.StartAsync();
 
-const string appId = "744fb9bd-55d9-4bf3-8d22-3c9ee99819a5";
 const string platformApi = "https://app.adenin.com/api/notebook/copy/templates-copilot/{0}";
 const string cardUrlBase = "https://app.adenin.com/app/assistant/card/{0}";
 const string apiErrorMessage = "Skipping {Card} as platform returned status {Status} during creation";
 const string cardUrlPlaceholder = "{0}";
 const string cardJson = $$"""
                           {
+                              "description": "App integrations",
+                              "height": "none",
                               "appIntegrations": true,
                               "channel": "app_integrations",
                               "cardUrl": "{{cardUrlPlaceholder}}"
@@ -122,11 +125,8 @@ using (var scope = host.Services.CreateScope())
         page.AddSection(CanvasSectionTemplate.ThreeColumn, 1);
     }
 
-    var availableComponents = await page.AvailablePageComponentsAsync();
-    var thirdPartyWebPartComponent = availableComponents.First(p => p.Id == page.DefaultWebPartToWebPartId(DefaultWebPart.ClientWebPart));
-
-    thirdPartyWebPartComponent.Id = appId;
-    thirdPartyWebPartComponent.Name = "App integrations";
+    var availableComponents = page.AvailablePageComponents().Where(c => c.ComponentType == 1);
+    var thirdPartyWebPartComponent = availableComponents.First(c => c.Name == "App integrations");
 
     var token = await context.AuthenticationProvider.GetAccessTokenAsync(new Uri("https://graph.microsoft.com"));
 
