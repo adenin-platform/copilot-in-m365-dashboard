@@ -275,6 +275,10 @@ using (var scope = host.Services.CreateScope())
             logger.LogWarning("Operation {Operation} is not valid, exiting", operation);
             break;
     }
+
+    logger.LogInformation("Press any key to exit");
+
+    Console.ReadLine();
 }
 
 host.Dispose();
