@@ -9,21 +9,20 @@ using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
 
-string sharepointSite;
-
-if (args.Length == 0)
-{
-    Console.WriteLine("Please provide the Sharepoint site URL:");
-    sharepointSite = Console.ReadLine()!;
-}
-else
-{
-    sharepointSite = args[0];
-}
-
 Console.WriteLine("Would you like to provision Viva Dashboard [V] or a SharePoint Page [S]? V/S:");
 
 var operation = Console.ReadLine()!.ToUpper();
+
+if (operation == "S")
+{
+    Console.WriteLine("What's the URL of the SharePoint site to which you want to add 'coe.aspx', for example\r\n{your-sharepoint-domain}/sites/leadership:");
+}
+else
+{
+    Console.WriteLine("What's your SharePoint's base domain:");
+}
+
+var sharepointSite = Console.ReadLine()!;
 
 var host = Host
     .CreateDefaultBuilder()
@@ -207,15 +206,10 @@ using (var scope = host.Services.CreateScope())
             await dashboard.SaveAsync();
             break;
         case "S":
-            var pages = await context.Web.GetPagesAsync("coe.aspx");
-            var page = pages.FirstOrDefault();
+            var page = await context.Web.NewPageAsync(PageLayoutType.Article);
 
-            if (page is not null)
-            {
-                await page.DeleteAsync();
-            }
-
-            page = await context.Web.NewPageAsync(PageLayoutType.Article);
+            page.PageTitle = "Copilot Centre of Excellence dashboard - powered by adenin";
+            page.SetCustomPageHeader("https://a.storyblok.com/f/150016/5472x3648/3d61f92558/laptop_bg.jpg");
 
             var numRows = cardList.Cards.Length / 3;
             var remainder = cardList.Cards.Length % 3;
