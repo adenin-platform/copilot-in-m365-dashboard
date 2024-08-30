@@ -204,6 +204,8 @@ using (var scope = host.Services.CreateScope())
             }
 
             await dashboard.SaveAsync();
+
+            logger.LogInformation("Your Copilot dashboard is ready! Go to {SharepointSite}/SitePages/Dashboard.aspx to view it now. Thanks for installing, contact adenin if you have any questions at all!", sharepointSite);
             break;
         case "S":
             var page = await context.Web.NewPageAsync(PageLayoutType.Article);
@@ -266,6 +268,8 @@ using (var scope = host.Services.CreateScope())
             }
 
             await page.SaveAsync("coe.aspx");
+
+            logger.LogInformation("Your Copilot dashboard is ready! Go to {SharepointSite}/SitePages/coe.aspx to view it now. Thanks for installing, contact adenin if you have any questions at all!", sharepointSite);
             break;
         default:
             logger.LogWarning("Operation {Operation} is not valid, exiting", operation);
