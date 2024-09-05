@@ -24,11 +24,11 @@
 
 3. Select whether you want to install the dashboard as a SharePoint page or Viva Connections dashboard
 
-<img src="/img/Installer_first_q.png" style="width: 500px;">
+<img src="/img/Installer_first_q.png" style="width: 700px;">
 
 4. Depending on your choice, enter either the page URL, e.g. `https://m365x59762214.sharepoint.com/sites/Learning`, or the SharePoint base domain, e.g. `https://m365x59762214.sharepoint.com/`
 
-<img src="/img/Installer_add_url.png" style="width: 500px;">
+<img src="/img/Installer_add_url.png" style="width: 700px;">
 
 4. The command line will open the browser so you can authenticate with SharePoint. Once authenticated, you can close the tab.
 
@@ -36,9 +36,11 @@
 
 5. The command line tool will now install the Cards. This shuold take 2-3 minutes.
 
-<img src="/img/image-3.png" style="width: 700px;">
+<img src="/img/Installer_in_progress.png" style="width: 700px;">
 
 6. Once done, the command line will show you a success message which contains the URL of your finished page. Copy-and-paste this over into your browser and you're finished.
+
+<img src="/img/Installer_finished.png" style="width: 700px;">
 
 ## Result
 
