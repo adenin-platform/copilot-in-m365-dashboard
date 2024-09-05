@@ -16,25 +16,29 @@
 
 ## How to install the command line tool
 
-1. Download the [`.zip`](cli.zip) archive
+1. Download the [`.zip`](cli.zip) archive (by clicking on the `Raw` button)
 
 2. Unpack the archive and open `adenin.PnPTool.exe` as an Administrator
 
 <img src="/img/image.png" style="width: 500px;">
 
-3. Enter your SharePoint site URL, e.g. `https://m365x59762214.sharepoint.com/`
+3. Select whether you want to install the dashboard as a SharePoint page or Viva Connections dashboard
 
-<img src="/img/image-1.png" style="width: 500px;">
+<img src="/img/Installer_first_q.png" style="width: 500px;">
+
+4. Depending on your choice, enter either the page URL, e.g. `https://m365x59762214.sharepoint.com/sites/Learning`, or the SharePoint base domain, e.g. `https://m365x59762214.sharepoint.com/`
+
+<img src="/img/Installer_add_url.png" style="width: 500px;">
 
 4. The command line will open the browser so you can authenticate with SharePoint. Once authenticated, you can close the tab.
 
 <img src="/img/image-2.png" style="width: 700px;">
 
-5. The command line tool will now install the Cards on your Viva Connections dashboard. This shuold take 2-3 minutes.
+5. The command line tool will now install the Cards. This shuold take 2-3 minutes.
 
 <img src="/img/image-3.png" style="width: 700px;">
 
-6. Once done, the command line will close by itself. 
+6. Once done, the command line will show you a success message which contains the URL of your finished page. Copy-and-paste this over into your browser and you're finished.
 
 ## Result
 
