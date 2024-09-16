@@ -187,6 +187,14 @@ You can find these Cards on your Viva Connections dashboard, which you can visit
 
 Yes, this CoE dashboard is built using Viva Connections, the dashboard UI underlying both SharePoint and Microsoft Teams.
 
+## Will this overwrite my Viva Connections dashboard?
+
+No, it is only adding new cards. If you install the package multiple times, it will only install those Cards that are not already there.
+
 ## I'm a security researcher. Can I build this package myself by cloning the repo?
 
 Yes, this repo contains the entire source code. Either clone the repo and navigate your command line to `cd downloads/copilot-in-m365-dashboard`, or download the zipped version of the repo. Then execute `build.cmd` in your CLI to build the `cli.zip` archive from the source.
+
+## Can I change what Cards I show to my users?
+
+Yes, simply delete any Viva Cards or SharePoint web parts you don't need. If you later change your mind, simply re-run the installer.
