@@ -50,6 +50,8 @@ Once your installation has gone through, navigate to your Viva Connections dashb
 
 ## What Cards are included
 
+> The dashboard comes pre-configured with some Cards that work out-of-the-box, and other Cards that would require a [small engagement](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=YcZMzgZFSE2MZMWwkKpG-1hGoYSsiA1AuSdSFitOj-xUN0wwMDRKRTBKTjVPWkRVR0hWUEZQR0FUNy4u) with the adenin team in order to make them work for your organization.
+
 <table>
   <thead>
     <tr>
@@ -198,3 +200,7 @@ Yes, this repo contains the entire source code. Either clone the repo and naviga
 ## Can I change what Cards I show to my users?
 
 Yes, simply delete any Viva Cards or SharePoint web parts you don't need. If you later change your mind, simply re-run the installer.
+
+## What permissions do I need to install this?
+
+You will need to be a "Global Administrator" for your Microsoft 365 tenant. Just being a "SharePoint Administrator" only won't be a sufficient role for the installation.
