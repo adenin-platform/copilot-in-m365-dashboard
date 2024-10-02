@@ -64,15 +64,6 @@ var host = Host
 
 await host.StartAsync();
 
-var cardsJson = await File.ReadAllTextAsync("./cards.json");
-var cardList = JsonSerializer.Deserialize<CardList>(cardsJson, Consts.CamelCaseJsonSerializerOptions);
-
-if (cardList is null)
-{
-    Console.Write("Could not find the card list JSON, cannot continue");
-    return;
-}
-
 using (var scope = host.Services.CreateScope())
 {
     var pnpContextFactory = scope.ServiceProvider.GetRequiredService<IPnPContextFactory>();
@@ -80,13 +71,21 @@ using (var scope = host.Services.CreateScope())
 
     try
     {
-        using var context = await pnpContextFactory.CreateAsync("SiteToWorkWith");
+        var cardsJson = await File.ReadAllTextAsync("./cards.json");
+        var cardList = JsonSerializer.Deserialize<CardList>(cardsJson, Consts.CamelCaseJsonSerializerOptions);
 
-        var deploySucceeded = false;
+        if (cardList is null)
+        {
+            Console.Write("Could not find the card list JSON, cannot continue");
+            return;
+        }
+
+        using var context = await pnpContextFactory.CreateAsync("SiteToWorkWith");
 
         Console.WriteLine("Would you like to deploy the app package to the tenant app catalog (requires global administrator privileges) [T], or the site app catalog [S]? T/S:");
 
         var tenantOrSite = Console.ReadLine()!.ToUpper();
+        var deploySucceeded = false;
 
         if (tenantOrSite == Consts.OperationNames.TenantAppCatalog)
         {
@@ -108,7 +107,7 @@ using (var scope = host.Services.CreateScope())
             {
                 if (e.Error is SharePointRestError error && error.HttpResponseCode == 404)
                 {
-                    logger.LogError("Could not find a site collection app catalog for {}. Please create it in SharePoint.", sharepointSite);
+                    logger.LogError("Could not find a site collection app catalog for {SharepointSite}. Please create it in SharePoint.", sharepointSite);
                 }
             }
         }
