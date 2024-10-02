@@ -34,11 +34,15 @@
 
 <img src="/img/image-2.png" style="width: 700px;">
 
-5. The command line tool will now install the Cards. This shuold take 2-3 minutes.
+5. The Command Line Tool will ask you to select what level of permission the user has. In most cases, the user will need to be a *Global Administrator*. Therefore select `T`.
+
+<img src="/img/image-admin-level.png" style="width: 700px;">
+
+6. The command line tool will now install the Cards. This shuold take 2-3 minutes.
 
 <img src="/img/Installer_in_progress.png" style="width: 700px;">
 
-6. Once done, the command line will show you a success message which contains the URL of your finished page. Copy-and-paste this over into your browser and you're finished.
+7. Once done, the command line will show you a success message which contains the URL of your finished page. Copy-and-paste this over into your browser and you're finished.
 
 <img src="/img/Installer_finished.png" style="width: 700px;">
 
