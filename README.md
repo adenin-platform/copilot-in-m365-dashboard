@@ -140,6 +140,11 @@ Once your installation has gone through, navigate to your Viva Connections dashb
       <td><img src="/img/image-30.png" style="width: 160px;"></td>
       <td><i>📡 Shows live data</i><br/>Learn what Copilot can do for different user roles in your organization</td>
     </tr>
+        <tr>
+      <td>Customer Hub</td>
+      <td><img src="/img/m365x53638756.sharepoint.com_SitePages_Dashboard.aspx.png" style="width: 160px;"></td>
+      <td><i>📡 Shows live data</i><br/>View upcoming & on-demand webinars designed to help you envision what you can achieve with Microsoft</td>
+    </tr>
     <tr>
       <td>Early Adopters</td>
       <td><img src="/img/early_adopters.png" style="width: 160px;"></td>
