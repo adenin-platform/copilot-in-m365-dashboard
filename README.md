@@ -1,4 +1,4 @@
-# Copilot in M365 Center of Excellence (CoE)
+# M365 Copilot Center of Excellence (CoE)
 ### Get all Copilot resources, updates and related content as a convenient Viva Connections dashboard
 
 ![alt text](/img/cover.png)
